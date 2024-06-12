@@ -36,7 +36,7 @@ def generate_response(topic):
     )
     query = prompt.format(topic=topic)
     response = llm.invoke(query, max_tokens=2048)
-    return st.write(response)
+    return st.write(response.content)
 
 
 topic_text = st.text_input("Ingresa el Tema: ")
