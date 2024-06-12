@@ -14,9 +14,9 @@ groq_api_key = st.sidebar.text_input(
     type = "password"
 )
 
-temperature = st.sidebar.text_input(
+temperature = st.sidebar.number_input(
     "Temperatura",
-    type = "float"
+    format="%.2f"
 )
 
 def generate_response(topic):
