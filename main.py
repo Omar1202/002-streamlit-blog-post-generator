@@ -40,8 +40,8 @@ def generate_response(topic):
 
 
 topic_text = st.text_input("Ingresa el Tema: ")
-if not groq_api_key.startswith("gsk-"):
+if not groq_api_key.startswith("gsk_"):
     st.warning("Enter Groq Key")
-if groq_api_key.startswith("gsk-"):
+if groq_api_key.startswith("gsk_"):
     generate_response(topic_text)
         
