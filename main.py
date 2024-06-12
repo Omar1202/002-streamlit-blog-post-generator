@@ -14,7 +14,7 @@ groq_api_key = st.sidebar.text_input(
     type = "password"
 )
 
-temperature = st.sidevar.text_input(
+temperature = st.sidebar.text_input(
     "Temperatura",
     type = "float"
 )
