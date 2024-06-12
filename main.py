@@ -35,7 +35,7 @@ def generate_response(topic):
         template = template
     )
     query = prompt.format(topic=topic)
-    response = llm(query, max_tokens=2048)
+    response = llm.invoke(query, max_tokens=2048)
     return st.write(response)
 
 
